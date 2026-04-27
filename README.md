@@ -49,7 +49,7 @@ Important: Update the dataset path in configs/defaults.py to point to your datas
 │
 ├── .gitignore                  # Files/folders ignored by Git
 ├── README.md                   # Project overview and instructions
-
+```
 ## Contact
 
 Tran Nhu Thuan  
