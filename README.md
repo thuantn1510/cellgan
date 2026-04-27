@@ -52,5 +52,4 @@ Important: Update the dataset path in configs/defaults.py to point to your datas
 ```
 ## Contact
 
-Tran Nhu Thuan  
-thuantn1510@gmail.com
+Thuan Tran Nhu  
