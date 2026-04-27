@@ -22,7 +22,7 @@ data/
     └── test/
         ├── images/      # Test images
         └── masks/       # Test masks
-        
 
+```
 Important: Update the dataset path in configs/defaults.py to point to your dataset directory: 
 `ROOT = os.path.join("data", "BBBC038v1")`
