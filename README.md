@@ -22,7 +22,35 @@ data/
     └── test/
         ├── images/      # Test images
         └── masks/       # Test masks
-
 ```
 Important: Update the dataset path in configs/defaults.py to point to your dataset directory: 
 `ROOT = os.path.join("data", "BBBC038v1")`
+
+## Project Structure
+
+```text
+├── data/
+│   └── BBBC038v1/              # Dataset directory (train/val/test)
+│
+├── src/                        # Core source code modules
+│   ├── dataset.py              # Dataset loader (CellDataset)
+│   ├── model.py                # Generator (ResUNet + Attention Gate) and Discriminator
+│   ├── losses.py               # GAN losses and auxiliary losses
+│   ├── utils.py                # Helper functions (noise injection, etc.)
+│   ├── engine.py               # Training pipeline for image generator (GAN)
+│   ├── mask_engine.py          # Training pipeline for mask generator
+│   ├── export.py               # Export synthetic image–mask pairs
+│   ├── train.py                # Train GAN and generate synthetic dataset
+│   ├── train_mask.py           # Train mask generator
+│   └── train_segmentation.py.py # Train segmentation models (U-Net, V-Net, R50-U-Net, DeepLabV3)
+│
+├── configs/
+│   └── defaults.py             # Default hyperparameters and dataset paths
+│
+├── .gitignore                  # Files/folders ignored by Git
+├── README.md                   # Project overview and instructions
+
+## Contact
+
+Tran Nhu Thuan  
+thuantn1510@gmail.com
