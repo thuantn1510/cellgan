@@ -2,7 +2,7 @@
 
 ## Overview
 
-Cell image segmentation is an important task in many biomedical image analysis applications. However, the limited availability of annotated datasets can reduce the performance of deep learning-based segmentation models. This work proposes a GAN-based data augmentation framework to improve cell image segmentation performance. The proposed approach generates cell images using an improved conditional generative adversarial network in which a residual U-Net architecture with Attention mechanisms is employed to produce cell images conditioned on cell masks. Besides, a noise injection technique is also applied to improve the augmentation quality
+This repository implements a GAN-based data augmentation framework for cell image segmentation. The method focuses on generating realistic synthetic image–mask pairs to enhance training data diversity and improve segmentation performance, especially in scenarios with limited annotated data.
 
 ## Dataset
 
